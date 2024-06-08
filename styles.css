@@ -9,6 +9,9 @@ body {
     color: #333;
 }
 
+#typed-name {
+    display: inline;
+}
 .container {
     width: 80%;
     margin: auto;
