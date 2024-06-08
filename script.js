@@ -1,12 +1,5 @@
 // script.js
 
-$(document).ready(function() {
-    // Animate on scroll
-    $('.animate__animated').waypoint(function() {
-        $(this.element).addClass('animate__fadeIn');
-    }, {
-        offset: '75%'
-    });
 
     // Smooth scrolling for internal links
     $('a[href^="#"]').on('click', function(event) {
@@ -18,11 +11,13 @@ $(document).ready(function() {
             }, 1000);
         }
     });
-
-    // Skills progress bar animation
-    $('.progress-line span').each(function() {
-        $(this).animate({
-            width: $(this).parent().attr('data-progress') + '%'
-        }, 1000);
+    $(document).ready(function() {
+        AOS.init();
+        new Typed('#typed-name', {
+            strings: ["Seifeldin Ibrahim Ahmed Mahmoud"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 5000,
+            loop: true
+        });
     });
-});
